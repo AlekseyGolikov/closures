@@ -16,4 +16,5 @@ def countdown(n):
 next = countdown(10)
 while True:
     v = next() # получить следующее значение
+    print(v)
     if not v: break
