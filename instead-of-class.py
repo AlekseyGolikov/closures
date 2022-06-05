@@ -22,12 +22,12 @@ def make_students_classifier(lower_bound, upper_bound):
         return {k:v for (k,v) in exam_dict.items() if lower_bound <= v < upper_bound}
     return classify_student
 
-gradeA = make_students_classifier(80, 100)
-gradeB = make_students_classifier(70, 80)
+gradeA = make_students_classifier
+gradeB = make_students_classifier
 gradeC = make_students_classifier(50, 70)
 gradeD = make_students_classifier(0, 50)
 
-print(gradeA(students))
-print(gradeB(students))
+print(gradeA(80, 100)(students))
+print(gradeB(70, 80)(students))
 print(gradeC(students))
 print(gradeD(students))
